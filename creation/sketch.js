@@ -1,8 +1,24 @@
+let circleX = 200;
+let widthC = 5;
+let i;
+
 function setup() {
-  createCanvas(400,400);
+  createCanvas(400, 300);
 }
 
+// function mousePressed(){
+//   circleX = 0;
+// }
+
+
+
 function draw() {
-  background('pink');
-  ellipse(50,50,80,80);
+  background(0);
+  noStroke();
+  fill(255);
+  circle(circleX, 150, widthC, 24);
+  
+  for (i = 0; i < 3; i++) {
+    widthC = widthC + 1;
+  }
 }
